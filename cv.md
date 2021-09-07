@@ -3,9 +3,9 @@
 ### Contact information
 
 * Address: Mayakovskogo street, Kyiv, Ukraine;
-* Phone: +38 068-944-15-12;
-* Email: Skydanenkoandrii@gmail.com;
-* GitHub: https://github.com/Skydanenko.
+* Phone: [+38 068-944-15-12](+380689441512);
+* Email: [Skydanenkoandrii@gmail.com](mailto:Skydanenkoandrii@gmail);
+* GitHub: [https://github.com/Skydanenko](https://github.com/Skydanenko).
 
 ### About me
 
