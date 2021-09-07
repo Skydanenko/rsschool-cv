@@ -1,5 +1,138 @@
+:root {
+    --primary-color-bg: #2e2e2e;
+    --secondary-color-bg: #3e3e3e;
+    --primary-color: #fff;
+    --secondary-color: #FFC107;
+    --semi-bold-title: 600;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--primary-color-bg);
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 60rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 0 0 10px -6px var(--secondary-color);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar__img {
+    max-width: 230px;
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 1px 2px 5px 0 var(--primary-color);
+}
+
+.avatar__name {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: var(--semi-bold-title);
+}
+
+.contacts {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    position: relative;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+.title_contacts {
+    margin-bottom: 30px;
+}
+
+.title::first-letter {
+    color: #fff;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.contacts__icon {
+    max-width: 50px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.contacts__subtitle {
+    font-size: 1.1rem;
+    font-weight: var(--semi-bold-title);
+}
+
+.contacts__link {
+    transition: 0.3s;
+}
+
+.contacts__link:hover {
+    color: var(--secondary-color);
+    transition: 0.3s;
 }
