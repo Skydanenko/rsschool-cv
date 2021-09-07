@@ -1,1 +1,0 @@
-https://skydanenko.github.io/rsschool-cv/cv
