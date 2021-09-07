@@ -73,11 +73,11 @@ function getRandomColor() {
 
 * Content-manager/markup developer - EVO.company;
 * Freelance
-  * [http://tablichki.com.ua/]();
-  * [http://school.happy-market.com.ua/]().
+  * [http://tablichki.com.ua](http://tablichki.com.ua);
+  * [http://school.happy-market.com.ua](http://school.happy-market.com.ua).
 * Course work
-  * [https://skidanenkoandrey.github.io/homeWork8-HTML5-CSS3-/dist/]();
-  * [https://skidanenkoandrey.github.io/homeWork10-Frameworks-/dist/]().
+  * [https://skidanenkoandrey.github.io/homeWork8-HTML5-CSS3-/dist](https://skidanenkoandrey.github.io/homeWork8-HTML5-CSS3-/dist);
+  * [https://skidanenkoandrey.github.io/homeWork10-Frameworks-/dist](https://skidanenkoandrey.github.io/homeWork10-Frameworks-/dist);
 
 ### Education
 
