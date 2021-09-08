@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Skydanenko Andrii CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,10 @@
     <header class="header">
         <figure class="avatar">
             <img class="avatar__img" src="img/avatar.jpeg" alt="avatar">
-            <figcaption class="avatar__name">Andrii Skydanenko</figcaption>
-            <p class="job">Content-manager/Markup developer</p>
+            <figcaption class="avatar__name">
+                Andrii Skydanenko
+                <p class="job">Content-manager/Markup developer</p>
+            </figcaption>
         </figure>
         <section class="contacts">
             <h2 class="title title_contacts">Contact information</h2>
@@ -96,7 +98,7 @@
                     'f'];<br>
                     const SQUARES_NUMBER = 500;<br>
                     <br>
-                    for (let i = 0; i < SQUARES_NUMBER; i++) {<br>
+                    for (let i = 0; i &lt; SQUARES_NUMBER; i++) {<br>
                     const square = document.createElement('div');<br><br>
                     square.classList.add('square');<br>
                     square.addEventListener('mouseover', () => setColor(square));<br>
@@ -117,7 +119,7 @@
                     <br>
                     function getRandomColor() {<br>
                     let randomColor = [];<br><br>
-                    for (let i = 0; i < 6; i++) {<br>
+                    for (let i = 0; i &lt; 6; i++) {<br>
                     const colorNumberIndex = Math.floor(Math.random() * colorNumber.length);<br>
                     randomColor.push(colorNumber[colorNumberIndex]);<br>
                     }<br><br>
