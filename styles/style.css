@@ -4,6 +4,7 @@
     --primary-color: #fff;
     --secondary-color: #ffc107;
     --semi-bold-title: 600;
+    --border-radius: 5px;
 }
 
 * {
@@ -42,7 +43,7 @@ body {
     margin-top: 50px;
     box-shadow: 0 0 10px -6px var(--secondary-color);
     padding: 50px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 .page__title {
@@ -168,7 +169,8 @@ summary::marker {
 }
 
 .about-responsibility__item,
-.skills__item {
+.skills__item,
+.language__item {
     position: relative;
     padding-left: 20px;
 }
@@ -178,7 +180,8 @@ summary::marker {
 }
 
 .about-responsibility__item::before,
-.skills__item::before {
+.skills__item::before,
+.language__item:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -196,7 +199,8 @@ summary::marker {
 
 
 .about-responsibility__item:hover::before,
-.skills__item:hover::before {
+.skills__item:hover::before,
+.language__item:hover::before {
     box-shadow: 0 0 0 7px rgba(255, 193, 7, .5);
     transition: 0.3s;
 }
@@ -212,10 +216,11 @@ summary::marker {
     display: inline-block;
     background: var(--secondary-color-bg);
     padding: 5px 5px 5px 30px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
-.skills__item::before {
+.skills__item::before,
+.language__item::before {
     left: 12px;
 }
 
@@ -226,7 +231,7 @@ summary::marker {
 .code__inner {
     background: var(--secondary-color-bg);
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .experience__item:not(:last-child) {
@@ -293,4 +298,13 @@ summary::marker {
     font-weight: var(--semi-bold-title);
 }
 
+.language__inner {
+    display: flex;
+    justify-content: space-between;
+}
 
+.language__item {
+    background: var(--secondary-color-bg);
+    padding: 5px 5px 5px 30px;
+    border-radius: var(--border-radius);
+}
