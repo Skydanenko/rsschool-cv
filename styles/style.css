@@ -2,7 +2,7 @@
     --primary-color-bg: #2e2e2e;
     --secondary-color-bg: #3e3e3e;
     --primary-color: #fff;
-    --secondary-color: #FFC107;
+    --secondary-color: rgb(255, 193, 7);
     --semi-bold-title: 600;
 }
 
@@ -87,14 +87,13 @@ body {
 }
 
 
-
-
 .title {
     position: relative;
     margin-bottom: 30px;
     font-size: 1.3rem;
     color: var(--secondary-color);
 }
+
 .title::first-letter {
     color: #fff;
 }
@@ -143,5 +142,59 @@ body {
 
 .contacts__link:hover {
     color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.about,
+.skills,
+.code,
+.experience,
+.education,
+.language {
+    margin-bottom: 50px;
+}
+
+summary::marker {
+    color: var(--secondary-color);
+}
+
+.about__description p:first-child,
+.about-responsibility {
+    margin-bottom: 20px;
+}
+
+.about-responsibility__title {
+    font-weight: var(--semi-bold-title);
+}
+
+.about-responsibility__list {
+    margin-top: 15px;
+}
+
+.about-responsibility__item {
+    position: relative;
+    padding-left: 20px;
+}
+
+.about-responsibility__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.about-responsibility__item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    width: 5px;
+    height: 5px;
+    background: var(--secondary-color);
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+
+.about-responsibility__item:hover::before {
+    box-shadow: 0 0 0 7px rgba(255, 193, 7,.5);
     transition: 0.3s;
 }
