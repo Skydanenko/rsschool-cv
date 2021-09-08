@@ -260,3 +260,37 @@ summary::marker {
 .icon-link {
     margin-right: 10px;
 }
+
+.education__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.university__title,
+.courses__title {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+}
+
+.row {
+    padding-left: 10px;
+    border-left: 2px solid var(--secondary-color);
+    transition: 0.2s;
+}
+
+.row:hover {
+    box-shadow: -12px 0px 11px -10px var(--secondary-color);
+}
+
+.row:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.university__year,
+.courses__year {
+    margin-bottom: 5px;
+    font-weight: var(--semi-bold-title);
+}
+
+
