@@ -33,22 +33,21 @@ body {
     max-width: 60rem;
     width: 100%;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .page {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin: 50px auto;
     box-shadow: 0 0 10px -6px var(--secondary-color);
-    padding: 50px;
     border-radius: var(--border-radius);
 }
 
 .page__title {
     text-align: center;
-    margin-bottom: 80px;
+    margin: 80px 0;
 }
 
 .header {
@@ -307,4 +306,38 @@ summary::marker {
     background: var(--secondary-color-bg);
     padding: 5px 5px 5px 30px;
     border-radius: var(--border-radius);
+}
+
+.footer {
+    margin: 0 -50px;
+    background: var(--secondary-color-bg);
+    padding: 20px 50px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+}
+
+.footer__year {
+    font-size: 3rem;
+    font-weight: var(--semi-bold-title);
+    color: var(--secondary-color);
+}
+
+.footer__link_git {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: var(--semi-bold-title);
+}
+
+.footer__link_git img {
+    max-width: 60px;
 }
