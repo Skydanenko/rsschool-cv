@@ -53,6 +53,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .avatar {
@@ -85,16 +86,15 @@ body {
     flex-direction: column;
 }
 
+
+
+
 .title {
     position: relative;
-    color: var(--secondary-color);
-    font-size: 1.3rem;
-}
-
-.title_contacts {
     margin-bottom: 30px;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
 }
-
 .title::first-letter {
     color: #fff;
 }
