@@ -99,6 +99,10 @@ body {
     color: #fff;
 }
 
+.title_code {
+    display: inline-block;
+}
+
 .title::before {
     content: "";
     position: absolute;

@@ -86,40 +86,77 @@
             </ul>
         </section>
         <section class="code">
-            <h2 class="title">Code example</h2>
-            <code>
-                const board = document.querySelector('#board');<br>
-                const colorNumber = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];<br>
-                const SQUARES_NUMBER = 500;<br>
-                <br>
-                for (let i = 0; i < SQUARES_NUMBER; i++) {<br>
-                const square = document.createElement('div');<br><br>
-                square.classList.add('square');<br>
-                square.addEventListener('mouseover', () => setColor(square));<br>
-                square.addEventListener('mouseleave', () => removeColor(square));<br>
-                board.append(square);<br>
-                }<br>
-                <br>
-                function setColor(element) {<br>
-                const color = getRandomColor();<br><br>
-                element.style.backgroundColor = color;<br>
-                element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;<br>
-                }<br>
-                <br>
-                function removeColor(element) {<br>
-                element.style.backgroundColor = '#1d1d1d';<br>
-                element.style.boxShadow = `0 0 2px #000`;<br>
-                }<br>
-                <br>
-                function getRandomColor() {<br>
-                let randomColor = [];<br><br>
-                for (let i = 0; i < 6; i++) {<br>
-                const colorNumberIndex = Math.floor(Math.random() * colorNumber.length);<br>
-                randomColor.push(colorNumber[colorNumberIndex]);<br>
-                }<br><br>
-                return `#${randomColor.join('')}`<br>
-                }
-            </code>
+            <details class="code__inner">
+                <summary><h2 class="title title_code">Code example</h2></summary>
+                <code>
+                    const board = document.querySelector('#board');<br>
+                    const colorNumber = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e',
+                    'f'];<br>
+                    const SQUARES_NUMBER = 500;<br>
+                    <br>
+                    for (let i = 0; i < SQUARES_NUMBER; i++) {<br>
+                    const square = document.createElement('div');<br><br>
+                    square.classList.add('square');<br>
+                    square.addEventListener('mouseover', () => setColor(square));<br>
+                    square.addEventListener('mouseleave', () => removeColor(square));<br>
+                    board.append(square);<br>
+                    }<br>
+                    <br>
+                    function setColor(element) {<br>
+                    const color = getRandomColor();<br><br>
+                    element.style.backgroundColor = color;<br>
+                    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;<br>
+                    }<br>
+                    <br>
+                    function removeColor(element) {<br>
+                    element.style.backgroundColor = '#1d1d1d';<br>
+                    element.style.boxShadow = `0 0 2px #000`;<br>
+                    }<br>
+                    <br>
+                    function getRandomColor() {<br>
+                    let randomColor = [];<br><br>
+                    for (let i = 0; i < 6; i++) {<br>
+                    const colorNumberIndex = Math.floor(Math.random() * colorNumber.length);<br>
+                    randomColor.push(colorNumber[colorNumberIndex]);<br>
+                    }<br><br>
+                    return `#${randomColor.join('')}`<br>
+                    }
+                </code>
+            </details>
+        </section>
+        <section class="experience">
+            <h2 class="title">Work experience</h2>
+            <ul class="experience__list">
+                <li class="experience__item">Content-manager/markup developer - EVO.company;</li>
+                <li class="experience__item">
+                    <details>
+                        <summary>Freelance</summary>
+                        <ul>
+
+                            <li>
+                                <a href="http://tablichki.com.ua">http://tablichki.com.ua</a>
+                            </li>
+                            <li>
+                                <a href="http://school.happy-market.com.ua">http://school.happy-market.com.ua.</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="experience__item">
+                    <details>
+                        <summary>Course work</summary>
+                        <ul>
+
+                            <li>
+                                <a href="https://skidanenkoandrey.github.io/homeWork8-HTML5-CSS3-/dist/">https://skidanenkoandrey.github.io/homeWork8-HTML5-CSS3-/dist/</a>
+                            </li>
+                            <li>
+                                <a href="https://skidanenkoandrey.github.io/homeWork10-Frameworks-/dist/">https://skidanenkoandrey.github.io/homeWork10-Frameworks-/dist/</a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
         </section>
     </main>
 </div>
