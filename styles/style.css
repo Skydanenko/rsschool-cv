@@ -98,10 +98,6 @@ body {
     color: #fff;
 }
 
-.title_code {
-    display: inline-block;
-}
-
 .title::before {
     content: "";
     position: absolute;
@@ -200,8 +196,8 @@ summary::marker {
 
 
 .about-responsibility__item:hover::before,
-.skills__item:hover::before{
-    box-shadow: 0 0 0 7px rgba(255, 193, 7,.5);
+.skills__item:hover::before {
+    box-shadow: 0 0 0 7px rgba(255, 193, 7, .5);
     transition: 0.3s;
 }
 
@@ -231,4 +227,36 @@ summary::marker {
     background: var(--secondary-color-bg);
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.experience__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.freelance,
+.course {
+    margin-top: 15px;
+}
+
+.freelance__item:not(:last-child),
+.course__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+.freelance__link,
+.course__link {
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.freelance__link:hover,
+.course__link:hover {
+    transition: 0.3s;
+    color: var(--secondary-color);
+}
+
+.icon-link {
+    margin-right: 10px;
 }
