@@ -73,11 +73,17 @@ body {
 }
 
 .avatar__name {
-    margin: 20px 0 10px;
+    margin: 20px 0 0;
     font-size: 1.5rem;
     align-items: center;
     color: var(--secondary-color);
     font-weight: var(--semi-bold-title);
+}
+
+.job {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
 }
 
 .contacts {
